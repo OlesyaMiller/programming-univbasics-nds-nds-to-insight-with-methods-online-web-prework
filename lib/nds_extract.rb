@@ -7,6 +7,8 @@ require 'directors_database'
 # { directorOne => allTheMoneyTheyMade, ... }
 
 def directors_totals(nds)
+  binding.pry 
+
   result = {}
   column_index = 0 
   while column_index < nds.length do 
@@ -23,8 +25,7 @@ end
 # using director_data as input
 
 def gross_for_director(director_data)
-  #binding.pry 
-  
+
     director_movies = director_data[:movies]
     gross_total = 0 
     inner_index = 0 
